@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rever e Aprender - Reforço Escolar 2026</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo reforco 2026.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- INICIALIZE O EMAILJS APÓS OBTER SUAS CREDENCIAIS -->
+    <script>
+        // Substitua estas informações pelas suas credenciais do EmailJS
+        (function() {
+            emailjs.init('jcL7XW_o4RwVC5-oW'); // Sua Public Key do EmailJS
+        })();
+    </script>
+</head>
+<body>
+    <!-- Cabeçalho com navegação -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <div class="logo-img">
+                    <img src="assets/logo reforco 2026.png" alt="Logo Rever e Aprender">
+                </div>
+                <div class="logo-text">
+                    <h1>Rever e Aprender</h1>
+                    <p>Reforço Escolar</p>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="#home" class="active">Início</a></li>
+                    <li><a href="#horarios">Horários</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Home -->
+    <section id="home">
+        <div class="container">
+            <h1>Rever e Aprender</h1>
+            <p>Transformando o aprendizado em uma jornada eficaz e significativa. Reforçando o conhecimento escolar com metodologias personalizadas.</p>
+            <a href="#contato" class="cta-button">Matricule-se Agora</a>
+        </div>
+    </section>
+
+    <!-- Seção Horários -->
+    <section id="horarios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Horários das Aulas</h2>
+                <p>Oferecemos turmas em diferentes horários para atender às necessidades dos alunos</p>
+            </div>
+            
+            <div class="schedule-container">
+                <div class="schedule-card">
+                    <i class="fas fa-sun"></i>
+                    <h3>Manhã</h3>
+                    <ul class="schedule-list">
+                        <li>Segunda a quinta <span>8h - 11h</span></li>
+                        <li>Alfabetização <span>8h - 10h / 9h - 11h</span></li>
+                        <li>Fundamental I <span>8h - 10h / 9h - 11h</span></li>
+                        <li>Fundamental II <span>8h - 10h / 9h - 11h</span></li>
+                    </ul>
+                </div>
+                
+                <div class="schedule-card">
+                    <i class="fas fa-cloud-sun"></i>
+                    <h3>Tarde</h3>
+                    <ul class="schedule-list">
+                        <li>Segunda a Quinta <span>14h - 16h</span></li>
+                        <li>Fundamental I <span>14h - 16h / 16h - 18h</span></li>
+                        <li>Fundamental II <span>14h - 16h / 16h - 18h</span></li>
+                        <li>Hora aula <span>horário a definir</span></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre Nós</h2>
+                <p>Conheça a metodologia do Rever e Aprender</p>
+            </div>
+            
+            <div class="about-container">
+                <div class="about-text">
+                    <h3>Nossa Missão</h3>
+                    <p>O "Rever e Aprender" nasceu da necessidade de oferecer um reforço escolar de qualidade, com foco nas dificuldades individuais de cada aluno. Acreditamos que todos podem aprender quando recebem a atenção e o método adequados.</p>
+                    
+                    <h3>Nossa Metodologia</h3>
+                    <p>Utilizamos uma abordagem personalizada, diagnosticando as principais dificuldades do aluno e desenvolvendo um plano de estudos específico para superar esses desafios.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h4>Acompanhamento Personalizado</h4>
+                                <p>Relatórios periódicos de evolução para os pais.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-laptop-house"></i>
+                            <div>
+                                <h4>Aulas Presenciais</h4>
+                                <p>Flexibilidade de horários para atender às necessidades de cada família.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <div class="container">
+            <div class="section-title">
+                <h2>Entre em Contato</h2>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Tv.Bom Jardim 303<br>Belém, PA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(91) 98807-4549</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>reveraprenderrefoco@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Quinta: 8h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envie sua Mensagem</h3>
+                    <form id="contactForm">
+                        <input type="text" name="from_name" placeholder="Seu nome" required>
+                        <input type="email" name="reply_to" placeholder="Seu email" required>
+                        <input type="tel" name="phone" placeholder="Seu telefone">
+                        <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                        <button type="submit" id="submitBtn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <div class="logo-img">
+                        <img src="assets/logo reforco 2026.png" alt="Logo Rever e Aprender">
+                    </div>
+                    <h3>Rever e Aprender</h3>
+                    <p>Transformando a educação através do reforço escolar.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#horarios">Horários</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/reveraprender/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5591988074549" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <p class="social-text">Fique por dentro das novidades e dicas de estudos.</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Rever e Aprender - Reforço Escolar. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
