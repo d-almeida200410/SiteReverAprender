@@ -120,7 +120,7 @@ function showNotification(message, type) {
     
     // Ícone baseado no tipo
     const icon = type === 'success' ? 'check-circle' : 'exclamation-circle';
-    const bgColor = type === 'success' ? '#10b981' : '#ef4444';
+    const bgColor = type === 'success' ? '#2f9e63' : '#e2543a';
     
     notification.innerHTML = `
         <i class="fas fa-${icon}"></i>
@@ -136,13 +136,14 @@ function showNotification(message, type) {
         background: ${bgColor};
         color: white;
         padding: 15px 20px;
-        border-radius: 8px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        box-shadow: 0 10px 28px rgba(18, 53, 44, 0.25);
         display: flex;
         align-items: center;
         gap: 10px;
         z-index: 9999;
         max-width: 400px;
+        font-family: 'Work Sans', sans-serif;
         animation: slideInRight 0.3s ease;
     `;
     
