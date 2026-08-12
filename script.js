@@ -4,9 +4,11 @@ const mainMenu = document.getElementById('mainMenu');
 
 mobileMenuBtn.addEventListener('click', () => {
     mainMenu.classList.toggle('active');
-    mobileMenuBtn.innerHTML = mainMenu.classList.contains('active') 
-        ? '<i class="fas fa-times"></i>' 
-        : '<i class="fas fa-bars"></i>';
+    const isOpen = mainMenu.classList.contains('active');
+    mobileMenuBtn.innerHTML = isOpen
+        ? '<i class="fas fa-times" aria-hidden="true"></i>'
+        : '<i class="fas fa-bars" aria-hidden="true"></i>';
+    mobileMenuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 });
 
 // Fechar menu ao clicar em um link
@@ -14,7 +16,8 @@ const menuLinks = document.querySelectorAll('nav a');
 menuLinks.forEach(link => {
     link.addEventListener('click', () => {
         mainMenu.classList.remove('active');
-        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        mobileMenuBtn.innerHTML = '<i class="fas fa-bars" aria-hidden="true"></i>';
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
     });
 });
 

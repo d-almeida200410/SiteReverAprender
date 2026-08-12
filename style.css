@@ -661,6 +661,18 @@ section {
     font-family: 'Nunito', sans-serif;
 }
 
+.map-embed {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    margin-top: 1.5rem;
+}
+
+.map-embed iframe {
+    display: block;
+}
+
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 16px;
