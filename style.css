@@ -888,3 +888,39 @@ footer::before {
         transition-duration: 0.001ms !important;
     }
 }
+
+.cta-secondary {
+    display: inline-block;
+    margin-top: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: rgba(247, 244, 234, 0.85);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: rgba(242, 193, 78, 0.6);
+    transition: var(--transition);
+}
+
+.cta-secondary:hover {
+    color: var(--chalk-yellow);
+    text-decoration-color: var(--chalk-yellow);
+}
+
+/* Telefone e e-mail clicáveis na seção de contato */
+.contact-item p a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(247, 244, 234, 0.35);
+    transition: var(--transition);
+}
+
+.contact-item p a:hover {
+    color: var(--chalk-yellow);
+    border-bottom-color: var(--chalk-yellow);
+}
+
+/* Evita quebra feia do e-mail comprido em telas pequenas */
+.contact-item p {
+    overflow-wrap: anywhere;
+}
